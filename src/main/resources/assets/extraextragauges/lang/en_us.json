@@ -1,0 +1,13 @@
+{
+  "itemGroup.extraextragauges": "Example Mod Tab",
+  "block.extraextragauges.example_block": "Example Block",
+  "item.extraextragauges.example_item": "Example Item",
+
+  "extraextragauges.configuration.title": "Extra Extra Gauges  Configs",
+  "extraextragauges.configuration.section.extraextragauges.common.toml": "Extra Extra Gauges  Configs",
+  "extraextragauges.configuration.section.extraextragauges.common.toml.title": "Extra Extra Gauges  Configs",
+  "extraextragauges.configuration.items": "Item List",
+  "extraextragauges.configuration.logDirtBlock": "Log Dirt Block",
+  "extraextragauges.configuration.magicNumberIntroduction": "Magic Number Text",
+  "extraextragauges.configuration.magicNumber": "Magic Number"
+}
