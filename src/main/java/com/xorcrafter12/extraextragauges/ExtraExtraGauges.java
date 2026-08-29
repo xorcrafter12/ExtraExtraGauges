@@ -30,7 +30,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import com.xorcrafter12.extraextragauges.registies.*;
+import com.xorcrafter12.extraextragauges.registries.*;
 @Mod(ExtraExtraGauges.MODID)
 public class ExtraExtraGauges {
     public static final String MODID = "extraextragauges";
