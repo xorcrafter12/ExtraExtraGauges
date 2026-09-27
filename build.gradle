@@ -19,6 +19,17 @@ sourceSets.main.resources {
 }
 
 repositories {
+	maven {
+		name = "Modrinth"
+		url = "https://api.modrinth.com/maven"
+		content {
+			includeGroup "maven.modrinth"
+		}
+	}
+	maven {
+		name = "BlameJared Maven"
+		url = "https://maven.blamejared.com"
+	}
 }
 
 base {
@@ -62,7 +73,12 @@ configurations {
 
 dependencies {
     implementation "net.neoforged:neoforge:${neo_version}"
-
+	
+	implementation "maven.modrinth:create:${create_version}"
+	
+	implementation "maven.modrinth:extra-gauges:${extra_gauges_version}"
+	
+	implementation "maven.modrinth:deployer:${deployer_version}"
 }
 
 
