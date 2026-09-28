@@ -54,21 +54,21 @@ description='''
 [[dependencies.${mod_id}]]
     modId="create"
     type="required"
-    versionRange="${create_version}"
+    versionRange="[${create_version})"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.${mod_id}]]
     modId="extra_gauges"
     type="required"
-    versionRange="${extra_gauges_version}"
+    versionRange="[${extra_gauges_version})"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.${mod_id}]]
     modId="deployer"
     type="required"
-    versionRange="${deployer_version}"
+    versionRange="[${deployer_version})"
     ordering="NONE"
     side="BOTH"
 #[features.${mod_id}]
