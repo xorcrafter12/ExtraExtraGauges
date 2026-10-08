@@ -74,7 +74,7 @@ configurations {
 dependencies {
     implementation "net.neoforged:neoforge:${neo_version}"
 	
-	implementation "maven.modrinth:create:${create_version}"
+	implementation "maven.modrinth:create:${create_version}+mc${minecraft_version}"
 	
 	implementation "maven.modrinth:extra-gauges:${extra_gauges_version}"
 	
