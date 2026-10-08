@@ -35,22 +35,14 @@ import com.xorcrafter12.extraextragauges.registries.*;
 public class ExtraExtraGauges {
     public static final String MODID = "extraextragauges";
     public static final Logger LOGGER = LogUtils.getLogger();
-    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
-
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
-            .title(Component.translatable("itemGroup.extraextragauges")) 
-            .withTabsBefore(CreativeModeTabs.COMBAT)
-            //.icon(() -> EXAMPLE_ITEM.get().getDefaultInstance())
-            .displayItems((parameters, output) -> {
-                //output.accept(EXAMPLE_ITEM.get());
-            }).build());
+    
 
     public ExtraExtraGauges(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
 
         EEGBlocks.BLOCKS.register(modEventBus);
         EEGItems.ITEMS.register(modEventBus);
-        CREATIVE_MODE_TABS.register(modEventBus);
+        EEGCreativeModeTabs.CREATIVE_MODE_TABS.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
