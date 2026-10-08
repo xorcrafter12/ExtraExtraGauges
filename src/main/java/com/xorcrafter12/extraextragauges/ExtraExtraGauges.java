@@ -44,7 +44,7 @@ public class ExtraExtraGauges {
         EEGBlocks.BLOCKS.register(modEventBus);
         EEGItems.ITEMS.register(modEventBus);
         EEGCreativeModeTabs.CREATIVE_MODE_TABS.register(modEventBus);
-        EEGPlanels.PANELS.register(modEventBus);
+        EEGPanels.PANELS.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
