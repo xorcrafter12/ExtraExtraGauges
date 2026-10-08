@@ -31,6 +31,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import com.xorcrafter12.extraextragauges.registries.*;
+
 @Mod(ExtraExtraGauges.MODID)
 public class ExtraExtraGauges {
     public static final String MODID = "extraextragauges";
@@ -43,6 +44,7 @@ public class ExtraExtraGauges {
         EEGBlocks.BLOCKS.register(modEventBus);
         EEGItems.ITEMS.register(modEventBus);
         EEGCreativeModeTabs.CREATIVE_MODE_TABS.register(modEventBus);
+        EEGPlanels.PANELS.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
